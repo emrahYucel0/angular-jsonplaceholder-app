@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row" style="gap: 1rem;">
+        <div class="card border-success mb-3" style="max-width: 18rem;" *ngFor="let post of posts">
+            <div class="card-header">POST ID: {{post.id}}</div>
+            <div class="card-header">USER ID: {{post.userId}}</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">{{post.title}}</h5>
+              <p class="card-text">{{post.body}}</p>
+              <app-comment [postId]="post.id"></app-comment>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  
